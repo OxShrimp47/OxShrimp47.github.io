@@ -1,0 +1,78 @@
+/*
+Name:Tommy Lee Truong
+Last Edit:Jan 26 2022
+Program Name: My Curriculum Vitae Site
+
+Style for menu bar
+*/
+#menubar{
+
+	width:25vw;
+	height:100vh;
+	overflow: hidden;
+	background:linear-gradient(to top left,rgba(255,255,255,0.4),rgba(255,255,255,0.7));
+}
+#menubar a{
+	text-decoration:none;
+	float: top left;
+	display: block;
+	font-size: 12vh;
+	font-family:"Helvetica",sans;
+
+	text-align: center;
+	width:100%;
+}
+.menu_item{
+	font-weight: 300;
+	width:100%;
+	height:25%;
+	object-fit:cover;
+}
+#menubar a:link{color: black;}
+#menubar a:visited{color: black;}
+#menubar a:hover{background-color:rgba(105,177,185,0.5);}
+#menubar a:active{background-color:rgba(105,177,185,0.5);}
+.active{
+	font-weight: 600;
+	background: linear-gradient(to top left,rgba(255,255,255,0.5),rgba(255,255,255,0.9));
+	height:50%;
+}
+.pad{ padding-top:10%;}
+.pad3{ padding-top:30%;}
+@media only screen and (orientation: portrait){
+	#menubar{
+		width:100vw;
+		height:5vh;
+	}
+	#menubar a{
+		text-decoration:none;
+		display: inline-block;
+		font-size: 5vw;
+		height:100%;
+		width:33%;
+	}
+	.menu_item{
+		width:33%;
+		height:100%;
+	}
+	.active{
+		height:100%;
+		width:33%;
+	}
+	.pad{ padding-top:5%;}
+	.pad3{ padding-top:5%;}
+}
+@media only screen and (orientation: landscape){
+	@media only screen and (min-width:760px){
+		#menubar a{font-size: 8vh;}
+		.pad{ padding-top:20%;}
+		.pad3{ padding-top:50%;}
+	}
+	@media only screen and (min-width:1200px){
+		#menubar a{
+			font-size: 12vh;
+		}
+		.pad{ padding-top:10%;}
+		.pad3{ padding-top:30%;}
+	}
+}

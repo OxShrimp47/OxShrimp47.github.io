@@ -1,0 +1,112 @@
+/*
+Name:Tommy Lee Truong
+Last Edit:Jan 26 2022
+Program Name: My Curriculum Vitae Site
+
+style for portfolio page
+*/
+body{
+	margin: 0;
+	background-image: linear-gradient(to top left,rgba(0,0,0,1),rgba(0,0,0,0.8)),url('herringbone.png');
+	min-height:100vh;
+	min-width:100vw;
+}
+#card_box{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	top:0;
+	left:25vw;
+	width:75vw;
+	height:100vh;
+	position:absolute;
+	overflow-y:scroll;
+}
+.card{
+	position:relative;
+	display:block;
+	width:250px;
+	height:375px;
+	padding:5px;
+	box-shadow: 10px 10px 6px rgba(0,0,0,0.5);
+}
+.card_image{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+.programmer:before{
+	content:"";
+	position:absolute;
+	top:5px;
+	bottom:0;
+	left:5px;
+	right:0;
+	background:rgba(210,64,64,0.7);
+	width:250px;
+	height:375px;
+}
+.designer:before{
+	content:"";
+	position:absolute;
+	top:5px;
+	bottom:0;
+	left:5px;
+	right:0;
+	background:rgba(131,107,186,0.7);
+	width:250px;
+	height:375px;
+}
+.mathematician:before{
+	content:"";
+	position:absolute;
+	top:5px;
+	bottom:0;
+	left:5px;
+	right:0;
+	background:rgba(105,177,185,0.7);
+	width:250px;
+	height:375px;
+}
+.card_text{
+	position:absolute;
+	display:block;
+	top:40%;
+	bottom:5px;
+	left:5px;
+	right:5px;
+	font-family: "Segoe UI",monospace,sans;
+	font-style: italic;
+	font-size: 30px;
+	font-weight: 500;
+	text-align: center;
+	color: white;
+	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	width:250px;
+	height:375px;
+}
+.card_border{
+	width:235px;
+	height:360px;
+	position:absolute;
+	top:10px;
+	left:10px;
+	border:3px solid white;
+}
+.card_border:hover{
+	width:240px;
+	height:365px;
+	position:absolute;
+	top:5px;
+	left:5px;
+	border:5px solid white;
+}
+@media only screen and (orientation: portrait){
+	#card_box{
+		top:5vh;
+		left:0vw;
+		width:100vw;
+		height:95vh;
+	}
+
+}
